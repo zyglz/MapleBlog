@@ -51,8 +51,8 @@ export async function GET(context: APIContext) {
     <lastBuildDate>${feedUpdated}</lastBuildDate>
     <pubDate>${feedUpdated}</pubDate>
     <language>zh-cn</language>
-    <managingEditor>Maplezz</managingEditor>
-    <webMaster>Maplezz</webMaster>
+    <managingEditor>Tidus</managingEditor>
+    <webMaster>Tidus</webMaster>
     <generator>Astro</generator>
     <ttl>60</ttl>
 
@@ -62,7 +62,7 @@ ${sortedPosts.map((post) => {
     const description = post.data.description || 
       (post.body ? post.body.slice(0, 200).replace(/[#*`]/g, '') + '...' : '暂无描述');
     const postUrl = `${siteUrl}/blog/${post.id}/`;
-    const author = post.data.author || 'Maplezz';
+    const author = post.data.author || 'Tidus';
     
     // 处理封面图
     let imageContent = '';
