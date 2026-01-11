@@ -36,14 +36,14 @@ export type PageType = 'blog' | 'notes';
 //网站信息
 export const SITE_INFO = {
   // 网站名称
-  NAME: 'TDBlog',
-  SITE_NAME: 'TD Blog',
+  NAME: 'TidusBlog',
+  SITE_NAME: 'Tidus Blog',
   SUBNAME: '一个简单的Liquid Glass风格的静态网站系统',
   // 网站描述
   DESCRIPTION: 'Maple_CMS是一个简单的Liquid Glass风格的静态网站系统，用于快速搭建个人博客、技术分享、产品展示等网站。',
   // 网站 URL (生产环境)
   URL: 'https://ttdd.top',
-  AUTHOR: 'Maplezz',
+  AUTHOR: 'Tidus',
   // 本地开发 URL
   DEV_URL: 'https://mapleblog.pages.dev',
   LOGO_IMAGE: '/favicon/logo.png',
