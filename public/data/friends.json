@@ -12,24 +12,24 @@
       "avatar": "/favicon/avatar.webp",
       "status": "active",
       "category_code": "tech",
-      "sort_order": 1
-    },
-    {
-      "id": "2",
-      "name": "前端之路",
-      "url": "https://example.com",
-      "description": "JS/TS、React、工程化与性能优化",
-      "avatar": "/favicon/logo-192x192.png",
-      "status": "active",
-      "category_code": "tech",
       "sort_order": 2
     },
     {
+      "id": "2",
+      "name": "资源管理站",
+      "url": "https://www.zyglz.com",
+      "description": "资源共享，经验交流，学习互动",
+      "avatar": "https://www.zyglz.com/usr/uploads/logo.png",
+      "status": "active",
+      "category_code": "tech",
+      "sort_order": 1
+    },
+    {
       "id": "3",
-      "name": "岛屿笔记",
-      "url": "https://example.com",
+      "name": "我的博客",
+      "url": "https://blog.zyglz.com",
       "description": "旅行、摄影与日常随笔",
-      "avatar": "/favicon/logo-192x192.png",
+      "avatar": "https://www.zyglz.com/usr/uploads/logo.png",
       "status": "active",
       "category_code": "life",
       "sort_order": 1
