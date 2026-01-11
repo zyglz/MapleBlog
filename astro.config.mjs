@@ -19,11 +19,11 @@ const isDevelopment = NODE_ENV === 'development';
 const getSiteUrl = () => {
   switch (NODE_ENV) {
     case 'production':
-      return "https://maplezz.com"; // 请替换为您的实际域名
+      return "https://ttdd.top/"; // 请替换为您的实际域名
     case 'development':
     case 'test':
     default:
-      return "http://localhost:4321";
+      return "https://mapleblog.pages.dev/";
   }
 };
 

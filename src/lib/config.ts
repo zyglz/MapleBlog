@@ -36,26 +36,26 @@ export type PageType = 'blog' | 'notes';
 //网站信息
 export const SITE_INFO = {
   // 网站名称
-  NAME: 'MapleBlog',
-  SITE_NAME: 'Maple Blog',
+  NAME: 'TDBlog',
+  SITE_NAME: 'TD Blog',
   SUBNAME: '一个简单的Liquid Glass风格的静态网站系统',
   // 网站描述
   DESCRIPTION: 'Maple_CMS是一个简单的Liquid Glass风格的静态网站系统，用于快速搭建个人博客、技术分享、产品展示等网站。',
   // 网站 URL (生产环境)
-  URL: 'http://localhost:4321',
+  URL: 'https://ttdd.top',
   AUTHOR: 'Maplezz',
   // 本地开发 URL
-  DEV_URL: 'http://localhost:4321',
+  DEV_URL: 'https://mapleblog.pages.dev',
   LOGO_IMAGE: '/favicon/logo.png',
   KEY_WORDS: '静态网站,静态网站系统,Maple_CMS',
   GOOGLE_ANALYTICS_ID: 'G-XXXXXX',  // 需改为你自己的Google Analytics ID
-  BAIDU_ANALYTICS_ID: 'XXXXXXXXXX', // 需改为你自己的百度分析ID
+  BAIDU_ANALYTICS_ID: 'a556333e0aa8636654076b476fcaec62', // 需改为你自己的百度分析ID
   // 网站初始时间（用于计算运行时长）
-  START_DATE: '2025-07-12',
-  // ICP 备案信息
+  START_DATE: '2026-01-11',
+  // ICP 备案信息:NUMBER: '备案号xxxxxx', URL: 'https://xxxxxxxxxx'
   ICP: {
-    NUMBER: '备案号xxxxxx',
-    URL: 'https://xxxxxxxxxx'
+    NUMBER: '',
+    URL: ''
   }
 } as const;
 
