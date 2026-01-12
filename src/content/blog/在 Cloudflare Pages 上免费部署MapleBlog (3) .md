@@ -4,7 +4,7 @@ description: 在Cloudflare Pages上免费部署MapleBlog 格式的常用语法�
 createdAt: 2026-01-11
 updatedAt: 2026-01-11
 author: Tidus
-image: "@assets/uploads/zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp"
+image: "@https://i.postimg.cc/h4ZcmB4b/wang-zhan-da-jian-zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp"
 categories:
   - 网站建设
 tags:
