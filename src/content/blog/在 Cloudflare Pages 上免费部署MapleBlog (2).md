@@ -1,10 +1,10 @@
 ---
-title: 网站建设-在 Cloudflare Pages 上免费部署MapleBlog
+title: 在 Cloudflare Pages 上免费部署MapleBlog
 description: 在Cloudflare Pages上免费部署MapleBlog 格式的常用语法与组件。
 createdAt: 2026-01-11
 updatedAt: 2026-01-11
 author: Tidus
-image: "@assets/uploads/wang-zhan-da-jian-zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp"
+image: "@https://i.postimg.cc/h4ZcmB4b/wang-zhan-da-jian-zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp"
 categories:
   - 网站建设
 tags:
@@ -13,13 +13,13 @@ draft: false
 hideToc: false
 ---
 
-# 网站建设-在 Cloudflare Pages 上免费部署MapleBlog
+# 在 Cloudflare Pages 上免费部署MapleBlog
 
 MapleBlog 是一个基于 Astro 的静态博客生成器，非常适合在 Cloudflare Pages 上免费、快速地进行部署。以下是详细的步骤和配置说明。
 
 <!--more-->
 
-[![wang-zhan-da-jian-zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp](https://i.postimg.cc/h4ZcmB4b/wang-zhan-da-jian-zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp)](https://postimg.cc/7bzFvj2f)
+[![在 Cloudflare Pages 上免费部署MapleBlog.webp](https://i.postimg.cc/h4ZcmB4b/wang-zhan-da-jian-zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp)](https://postimg.cc/7bzFvj2f)
 
 ##  核心部署思路
 1.  **获取代码**：Fork 或下载项目源码。
