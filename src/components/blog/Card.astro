@@ -13,33 +13,29 @@ interface Props {
 }
 
 const { entry }: Props = Astro.props;
-const { title, description, createdAt, categories, tags, image, imageAlt } =
-  entry.data;
+const { title, description, createdAt, categories, tags, image, imageAlt } = entry.data;
 
 const descriptionLength = 200;
 
-// 检查是否有自定义图片
-const hasCustomImage = !!(image && typeof image === "object" && "src" in image);
+// 检查是否有自定义图片 - 支持本地图片对象和外部图片URL
+const hasLocalImage = !!(image && typeof image === "object" && "src" in image);
+const hasExternalImage = !!(image && typeof image === "string");
+const hasCustomImage = hasLocalImage || hasExternalImage;
 const displayImageAlt = imageAlt || `${title} - 默认图片`;
 
 const entryDate = createdAt ? formatDate(createdAt) : null;
 const entryReadingTime = readingTime(entry.body!, 1); // 使用默认复杂度1
-const entryDescription =
-  description || plainify(entry.body!.slice(0, descriptionLength));
+const entryDescription = description || plainify(entry.body!.slice(0, descriptionLength));
 ---
 
-<div
-  class="glass-t border border-slate-300 dark:border-slate-700 h-full my-2 pl-0 rounded-[25px] overflow-hidden transition-all duration-300 group"
->
-  <div
-    class="flex flex-col h-full rounded-[25px] 
-    hover:scale-[1.02] transition-all duration-300  hover:shadow-xl"
-  >
+<div class="glass-t border border-slate-300 dark:border-slate-700 h-full my-2 pl-0 rounded-[25px] overflow-hidden transition-all duration-300 group">
+  <div class="flex flex-col h-full rounded-[25px] hover:scale-[1.02] transition-all duration-300 hover:shadow-xl">
     <!-- 特色图片展示 -->
     <div class="relative w-full aspect-[7/3] overflow-hidden rounded-t-[24px]">
       <a href={`/blog/${entry.id}`} class="block w-full h-full">
         {hasCustomImage ? (
-          <>
+          hasLocalImage ? (
+            // 本地图片处理
             <Image
               class="w-full h-full object-cover transition-all duration-500 ease-out group-hover:scale-105"
               src={image}
@@ -51,23 +47,26 @@ const entryDescription =
               decoding="async"
               fetchpriority="high"
             />
-            <!-- 简化的渐变遮罩 -->
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-40 group-hover:opacity-20 transition-opacity duration-300"
-            >
-            </div>
-          </>
+          ) : (
+            // 外部图片URL处理
+            <img
+              class="w-full h-full object-cover transition-all duration-500 ease-out group-hover:scale-105"
+              src={image as string}
+              alt={displayImageAlt}
+              loading="lazy"
+              decoding="async"
+            />
+          )
         ) : (
           <div class="w-full h-full transition-all duration-500 ease-out group-hover:scale-105">
-            <PlaceholderImage 
-              title={title}
-              className="w-full h-full rounded-t-[24px]"
-            />
+            <PlaceholderImage title={title} className="w-full h-full rounded-t-[24px]" />
           </div>
         )}
+        <!-- 简化的渐变遮罩 -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-40 group-hover:opacity-20 transition-opacity duration-300"></div>
       </a>
     </div>
-
+    
     <!-- 内容区域 -->
     <div class="p-5">
       <!-- 文章标题 -->

@@ -19,13 +19,13 @@ interface Props {
 }
 
 const { entry }: Props = Astro.props;
-const { title, description, createdAt, categories, tags, image, imageAlt } =
-  entry.data;
+const { title, description, createdAt, categories, tags, image, imageAlt } = entry.data;
 const descriptionLength = 100; // 列表页描述稍短
 
-// 检查是否有自定义图片
-const hasCustomImage = !!(image && typeof image === "object" && "src" in image);
-// console.log("图片：", image);
+// 检查是否有自定义图片 - 支持本地图片对象和外部图片URL
+const hasLocalImage = !!(image && typeof image === "object" && "src" in image);
+const hasExternalImage = !!(image && typeof image === "string");
+const hasCustomImage = hasLocalImage || hasExternalImage;
 const displayImageAlt = imageAlt || `${title} - 默认图片`;
 
 const entryDate = createdAt ? formatDate(createdAt) : null;
@@ -50,22 +50,29 @@ const entryDescription = description?.substring(0, descriptionLength) || "";
     >
       <a href={`/blog/${entry.id}`}>
         {hasCustomImage ? (
-          <Image
-            class="w-full h-full rounded-lg object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
-            src={image}
-            alt={displayImageAlt}
-            inferSize={true}
-            loading="lazy"
-            format="webp"
-            quality={40}
+          hasLocalImage ? (
+            // 本地图片处理
+            <Image
+              class="w-full h-full rounded-lg object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+              src={image}
+              alt={displayImageAlt}
+              inferSize={true}
+              loading="lazy"
+              format="webp"
+              quality={40}
               decoding="async"
               fetchpriority="high"
             />
-            <!-- 图片遮罩层 -->
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 rounded-lg group-hover:rounded-xl transition-opacity duration-300"
-            >
-            </div>
+          ) : (
+            // 外部图片URL处理
+            <img
+              class="w-full h-full rounded-lg object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+              src={image as string}
+              alt={displayImageAlt}
+              loading="lazy"
+              decoding="async"
+            />
+          )
         ) : (
           <div class="w-full h-full transition-all duration-500 group-hover:scale-110">
             <PlaceholderImage 
@@ -74,6 +81,11 @@ const entryDescription = description?.substring(0, descriptionLength) || "";
             />
           </div>
         )}
+        <!-- 图片遮罩层 -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 rounded-lg group-hover:rounded-xl transition-opacity duration-300"
+        >
+        </div>
       </a>
     </div>
 
@@ -175,3 +187,5 @@ const entryDescription = description?.substring(0, descriptionLength) || "";
   </div>
 </LiquidGlass>
 <!-- </div> -->
+
+

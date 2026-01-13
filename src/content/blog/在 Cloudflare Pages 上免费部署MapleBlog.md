@@ -4,7 +4,7 @@ description: 在Cloudflare Pages上免费部署MapleBlog 格式的常用语法�
 createdAt: 2026-01-11
 updatedAt: 2026-01-11
 author: Tidus
-image: "@assets/uploads/zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog.webp"
+image: "https://image.ttdd.top/file/zyglz/2026/1768266093501.webp"
 categories:
   - 网站建设
 tags:
@@ -19,7 +19,7 @@ MapleBlog 是一个基于 Astro 的静态博客生成器，非常适合在 Cloud
 
 <!--more-->
 
-[![在 Cloudflare Pages 上免费部署MapleBlog.webp](https://i.postimg.cc/h4ZcmB4b/wang-zhan-da-jian-zai-Cloudflare-Pages-shang-mian-fei-bu-shu-Maple-Blog-tuya.webp)](https://postimg.cc/7bzFvj2f)
+![在 Cloudflare Pages 上免费部署MapleBlog.webp](https://image.ttdd.top/file/zyglz/2026/1768266093501.webp)
 
 ##  核心部署思路
 1.  **获取代码**：Fork 或下载项目源码。
