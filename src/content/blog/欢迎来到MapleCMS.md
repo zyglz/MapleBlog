@@ -5,7 +5,7 @@ createdAt: 2025-11-17
 updatedAt: 2025-11-17
 categories:
   - 使用说明
-author: Maple
+author: Tidus
 image: "@assets/uploads/demo.webp"
 tags:
   - 文章
