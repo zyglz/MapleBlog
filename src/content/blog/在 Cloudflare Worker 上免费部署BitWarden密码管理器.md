@@ -47,7 +47,9 @@ hideToc: false
 1. Fork 本仓库。若本项目对你有帮助，欢迎点个 Star。
 2. 打开 [Workers](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create) ➜ `Continue with GitHub` ➜ 选择你 Fork 后的仓库（`NodeWarden`）➜ 下一步 ➜ （默认使用 R2 存储；若未开通，可切换为 KV，并将部署命令改为 `npm run deploy:kv`）➜ 部署 
 3. 打开生成的链接（绑定自定义域名），按提示，添加“变量和机密”：JWT_SECRET
+
 ![免费使用cloudflare搭建BitWarden密码管理器1.png](https://image.zyglz.com/file/zyglz/2026/1772857696488.png)
 
 4. 随后刷新网页,填好你的账号密码即可(首个用户即为系统管理员)
+
 ![免费使用cloudflare搭建BitWarden密码管理器.jpg](https://image.zyglz.com/file/zyglz/2026/1772857691237.jpg)
