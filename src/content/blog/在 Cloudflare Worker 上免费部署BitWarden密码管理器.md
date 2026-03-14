@@ -6,9 +6,11 @@ updatedAt: 2026-03-07
 author: Tidus
 image: "https://image.zyglz.com/file/zyglz/2026/1772857691237.jpg"
 categories:
-  - 网站建设
+  - 网站运营
 tags:
   - 网站建设
+  - 项目应用
+  - 折腾搭建
 draft: false
 hideToc: false
 ---
