@@ -58,8 +58,8 @@
 
 /* 应用主题变量到全局样式 */
 body {
-  background-color: var(--theme-background);
-  color: var(--theme-foreground);
+  background-color: var(--theme-background) !important;
+  color: var(--theme-foreground) !important;
 }
 
 /* 卡片样式 */

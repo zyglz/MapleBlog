@@ -23,9 +23,19 @@
     }
   };
 
+  // 主题循环顺序
+  const themeOrder = ['default', 'dark', 'forest', 'sunset'];
+
   // 获取当前主题
   function getCurrentTheme() {
     return localStorage.getItem('currentTheme') || 'default';
+  }
+
+  // 获取下一个主题
+  function getNextTheme(currentTheme) {
+    const currentIndex = themeOrder.indexOf(currentTheme);
+    const nextIndex = (currentIndex + 1) % themeOrder.length;
+    return themeOrder[nextIndex];
   }
 
   // 设置主题
@@ -46,16 +56,14 @@
     // 保存主题到本地存储
     localStorage.setItem('currentTheme', themeName);
     
-    // 更新主题选择器
-    updateThemeSelector(themeName);
+    // 更新主题状态显示
+    updateThemeDisplay(themeName);
   }
 
-  // 更新主题选择器
-  function updateThemeSelector(themeName) {
-    const selector = document.getElementById('theme-selector');
-    if (selector) {
-      selector.value = themeName;
-    }
+  // 更新主题显示
+  function updateThemeDisplay(themeName) {
+    // 这里可以添加主题名称显示逻辑
+    console.log('当前主题:', themes[themeName].label);
   }
 
   // 初始化主题
@@ -71,12 +79,14 @@
   document.addEventListener("astro:page-load", () => {
     initTheme();
     
-    // 主题选择器事件
-    const selector = document.getElementById('theme-selector');
-    if (selector) {
-      selector.addEventListener('change', (e) => {
-        setTheme(e.target.value);
+    // 主题切换器事件
+    const themeSwitch = document.querySelectorAll("[data-theme-switcher]");
+    themeSwitch.forEach((el) => {
+      el.addEventListener("click", () => {
+        const currentTheme = getCurrentTheme();
+        const nextTheme = getNextTheme(currentTheme);
+        setTheme(nextTheme);
       });
-    }
+    });
   });
 </script>
