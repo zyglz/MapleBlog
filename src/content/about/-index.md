@@ -3,7 +3,7 @@ title: 关于我
 description: this is meta description
 image: "@assets/picture.jpg"
 draft: false
-
+---
 ## 👋 你好，我是 Tidus
 
 欢迎来到我的技术博客！这里是我记录学习心得、分享技术经验、偶尔写写生活随笔的小天地。
