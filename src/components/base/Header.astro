@@ -1,5 +1,5 @@
 ---
-import ThemeSwitcher from "@components/base/ThemeSwitcher.astro";
+import ThemeSelector from "@components/base/ThemeSelector.astro";
 import { IoSearch } from "react-icons/io5";
 import logoImage from "@assets/image/logo.png";
 import LiquidGlass from "@components/common/LiquidGlassLess.astro";
@@ -59,12 +59,22 @@ const menu = [
   },
   {
     id: 5,
+    name: "设置",
+    url: "/settings",
+    target: "_self",
+    position: "header",
+    parent_id: null,
+    sort_order: 5,
+    children: [],
+  },
+  {
+    id: 6,
     name: "友链",
     url: "/links",
     target: "_self",
     position: "header",
     parent_id: null,
-    sort_order: 5,
+    sort_order: 6,
     children: [],
   },
 ];
@@ -198,7 +208,7 @@ const menu = [
         </svg>
       </button>
 
-      <ThemeSwitcher />
+      <ThemeSelector />
     </div>
     <!-- 背景玻璃效果 -->
     <!-- <div

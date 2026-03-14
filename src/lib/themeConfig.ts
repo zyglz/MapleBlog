@@ -2,6 +2,8 @@
 export interface ThemeConfig {
   name: string;
   label: string;
+  icon: string;
+  isDark: boolean;
   primary: string;
   secondary: string;
   accent: string;
@@ -20,6 +22,8 @@ export const themes: Record<string, ThemeConfig> = {
   default: {
     name: 'default',
     label: '默认主题',
+    icon: '🌐',
+    isDark: false,
     primary: '#007bff',
     secondary: '#6c757d',
     accent: '#17a2b8',
@@ -36,6 +40,8 @@ export const themes: Record<string, ThemeConfig> = {
   dark: {
     name: 'dark',
     label: '暗黑主题',
+    icon: '🌙',
+    isDark: true,
     primary: '#00aaff',
     secondary: '#6c757d',
     accent: '#17a2b8',
@@ -52,6 +58,8 @@ export const themes: Record<string, ThemeConfig> = {
   forest: {
     name: 'forest',
     label: '森林主题',
+    icon: '🌲',
+    isDark: false,
     primary: '#28a745',
     secondary: '#6c757d',
     accent: '#20c997',
@@ -68,6 +76,8 @@ export const themes: Record<string, ThemeConfig> = {
   sunset: {
     name: 'sunset',
     label: '日落主题',
+    icon: '🌅',
+    isDark: false,
     primary: '#fd7e14',
     secondary: '#6c757d',
     accent: '#ffc107',

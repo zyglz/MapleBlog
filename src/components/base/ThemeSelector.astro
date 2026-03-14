@@ -1,0 +1,54 @@
+---
+import ThemeScript from "@components/base/ThemeScript.astro";
+---
+
+<div class="relative">
+  <button
+    id="theme-selector-btn"
+    class="flex items-center gap-2 rounded-lg border border-border bg-bg-t px-3 py-1.5 text-sm text-txt-s outline-none transition-all duration-300 hover:border-txt-p focus:border-txt-p focus:ring-1 focus:ring-txt-p dark:border-darkmode-border dark:bg-darkmode-bg-t dark:text-darkmode-txt-s dark:hover:border-darkmode-txt-p dark:focus:border-darkmode-txt-p dark:focus:ring-darkmode-txt-p"
+    aria-label="选择主题"
+  >
+    <span id="current-theme-icon" class="text-lg">🎨</span>
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <div
+    id="theme-selector-dropdown"
+    class="absolute right-0 top-full z-50 mt-2 hidden w-48 rounded-lg border border-border bg-bg-t shadow-lg dark:border-darkmode-border dark:bg-darkmode-bg-t"
+  >
+    <div class="p-2">
+      <button
+        data-theme="default"
+        class="theme-option flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-txt-s transition-all hover:bg-bg-p dark:text-darkmode-txt-s dark:hover:bg-darkmode-bg-p"
+      >
+        <span class="text-xl">🌐</span>
+        <span>默认主题</span>
+      </button>
+      <button
+        data-theme="dark"
+        class="theme-option flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-txt-s transition-all hover:bg-bg-p dark:text-darkmode-txt-s dark:hover:bg-darkmode-bg-p"
+      >
+        <span class="text-xl">🌙</span>
+        <span>暗黑主题</span>
+      </button>
+      <button
+        data-theme="forest"
+        class="theme-option flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-txt-s transition-all hover:bg-bg-p dark:text-darkmode-txt-s dark:hover:bg-darkmode-bg-p"
+      >
+        <span class="text-xl">🌲</span>
+        <span>森林主题</span>
+      </button>
+      <button
+        data-theme="sunset"
+        class="theme-option flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-txt-s transition-all hover:bg-bg-p dark:text-darkmode-txt-s dark:hover:bg-darkmode-bg-p"
+      >
+        <span class="text-xl">🌅</span>
+        <span>日落主题</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<ThemeScript />

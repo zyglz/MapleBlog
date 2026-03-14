@@ -4,38 +4,45 @@
     default: {
       name: 'default',
       label: '默认主题',
+      icon: '🌐',
       isDark: false
     },
     dark: {
       name: 'dark',
       label: '暗黑主题',
+      icon: '🌙',
       isDark: true
     },
     forest: {
       name: 'forest',
       label: '森林主题',
+      icon: '🌲',
       isDark: false
     },
     sunset: {
       name: 'sunset',
       label: '日落主题',
+      icon: '🌅',
       isDark: false
     }
   };
 
-  // 主题循环顺序
-  const themeOrder = ['default', 'dark', 'forest', 'sunset'];
-
   // 获取当前主题
   function getCurrentTheme() {
-    return localStorage.getItem('currentTheme') || 'default';
-  }
-
-  // 获取下一个主题
-  function getNextTheme(currentTheme) {
-    const currentIndex = themeOrder.indexOf(currentTheme);
-    const nextIndex = (currentIndex + 1) % themeOrder.length;
-    return themeOrder[nextIndex];
+    // 优先使用用户选择的主题
+    const userTheme = localStorage.getItem('currentTheme');
+    if (userTheme) {
+      return userTheme;
+    }
+    
+    // 其次使用默认主题设置
+    const defaultTheme = localStorage.getItem('defaultTheme');
+    if (defaultTheme) {
+      return defaultTheme;
+    }
+    
+    // 最后使用系统默认主题
+    return 'default';
   }
 
   // 设置主题
@@ -56,14 +63,35 @@
     // 保存主题到本地存储
     localStorage.setItem('currentTheme', themeName);
     
-    // 更新主题状态显示
-    updateThemeDisplay(themeName);
+    // 更新主题图标显示
+    updateThemeIcon(themeName);
+    
+    // 隐藏下拉菜单
+    hideThemeDropdown();
   }
 
-  // 更新主题显示
-  function updateThemeDisplay(themeName) {
-    // 这里可以添加主题名称显示逻辑
-    console.log('当前主题:', themes[themeName].label);
+  // 更新主题图标
+  function updateThemeIcon(themeName) {
+    const iconElement = document.getElementById('current-theme-icon');
+    if (iconElement) {
+      iconElement.textContent = themes[themeName].icon;
+    }
+  }
+
+  // 显示主题下拉菜单
+  function showThemeDropdown() {
+    const dropdown = document.getElementById('theme-selector-dropdown');
+    if (dropdown) {
+      dropdown.classList.remove('hidden');
+    }
+  }
+
+  // 隐藏主题下拉菜单
+  function hideThemeDropdown() {
+    const dropdown = document.getElementById('theme-selector-dropdown');
+    if (dropdown) {
+      dropdown.classList.add('hidden');
+    }
   }
 
   // 初始化主题
@@ -79,14 +107,41 @@
   document.addEventListener("astro:page-load", () => {
     initTheme();
     
-    // 主题切换器事件
-    const themeSwitch = document.querySelectorAll("[data-theme-switcher]");
-    themeSwitch.forEach((el) => {
-      el.addEventListener("click", () => {
-        const currentTheme = getCurrentTheme();
-        const nextTheme = getNextTheme(currentTheme);
-        setTheme(nextTheme);
+    // 主题选择器按钮点击事件
+    const selectorBtn = document.getElementById('theme-selector-btn');
+    if (selectorBtn) {
+      selectorBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = document.getElementById('theme-selector-dropdown');
+        if (dropdown) {
+          if (dropdown.classList.contains('hidden')) {
+            showThemeDropdown();
+          } else {
+            hideThemeDropdown();
+          }
+        }
       });
+    }
+
+    // 主题选项点击事件
+    const themeOptions = document.querySelectorAll('.theme-option');
+    themeOptions.forEach((option) => {
+      option.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const themeName = option.getAttribute('data-theme');
+        if (themeName) {
+          setTheme(themeName);
+        }
+      });
+    });
+
+    // 点击其他地方关闭下拉菜单
+    document.addEventListener('click', (e) => {
+      const dropdown = document.getElementById('theme-selector-dropdown');
+      const selectorBtn = document.getElementById('theme-selector-btn');
+      if (dropdown && !dropdown.contains(e.target) && !selectorBtn.contains(e.target)) {
+        hideThemeDropdown();
+      }
     });
   });
 </script>
