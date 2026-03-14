@@ -32,34 +32,4 @@
   }
 </style>
 
-<script is:inline>
-  // 在页面加载前设置正确的主题背景，避免闪烁
-  (function() {
-    // 获取当前主题
-    function getCurrentTheme() {
-      const userTheme = localStorage.getItem("currentTheme");
-      if (userTheme) {
-        return userTheme;
-      }
-      
-      const defaultTheme = localStorage.getItem("defaultTheme");
-      if (defaultTheme) {
-        return defaultTheme;
-      }
-      
-      return "forest";
-    }
 
-    const currentTheme = getCurrentTheme();
-    
-    // 在DOM加载前设置正确的主题类
-    if (document.documentElement) {
-      document.documentElement.classList.add(currentTheme);
-      
-      // 处理暗黑模式
-      if (currentTheme === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    }
-  })();
-</script>
