@@ -1,0 +1,117 @@
+/* 主题样式文件 */
+
+/* 默认主题 */
+:root {
+  --theme-primary: #007bff;
+  --theme-secondary: #6c757d;
+  --theme-accent: #17a2b8;
+  --theme-background: #f8f9fa;
+  --theme-foreground: #343a40;
+  --theme-card: #ffffff;
+  --theme-card-foreground: #343a40;
+  --theme-border: #dee2e6;
+  --theme-input: #ffffff;
+  --theme-ring: #007bff;
+}
+
+/* 暗黑主题 */
+:root.dark {
+  --theme-primary: #00aaff;
+  --theme-secondary: #6c757d;
+  --theme-accent: #17a2b8;
+  --theme-background: #121212;
+  --theme-foreground: #e9ecef;
+  --theme-card: #1e1e1e;
+  --theme-card-foreground: #e9ecef;
+  --theme-border: #343a40;
+  --theme-input: #343a40;
+  --theme-ring: #00aaff;
+}
+
+/* 森林主题 */
+:root.forest {
+  --theme-primary: #28a745;
+  --theme-secondary: #6c757d;
+  --theme-accent: #20c997;
+  --theme-background: #f8fff8;
+  --theme-foreground: #2c3e50;
+  --theme-card: #ffffff;
+  --theme-card-foreground: #2c3e50;
+  --theme-border: #d4edda;
+  --theme-input: #ffffff;
+  --theme-ring: #28a745;
+}
+
+/* 日落主题 */
+:root.sunset {
+  --theme-primary: #fd7e14;
+  --theme-secondary: #6c757d;
+  --theme-accent: #ffc107;
+  --theme-background: #fff8f0;
+  --theme-foreground: #495057;
+  --theme-card: #ffffff;
+  --theme-card-foreground: #495057;
+  --theme-border: #fff3cd;
+  --theme-input: #ffffff;
+  --theme-ring: #fd7e14;
+}
+
+/* 应用主题变量到全局样式 */
+body {
+  background-color: var(--theme-background);
+  color: var(--theme-foreground);
+}
+
+/* 卡片样式 */
+.card {
+  background-color: var(--theme-card);
+  color: var(--theme-card-foreground);
+  border-color: var(--theme-border);
+}
+
+/* 按钮样式 */
+.btn-primary {
+  background-color: var(--theme-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--theme-secondary);
+  color: white;
+}
+
+/* 链接样式 */
+a {
+  color: var(--theme-primary);
+}
+
+a:hover {
+  color: var(--theme-accent);
+}
+
+/* 输入框样式 */
+input, textarea, select {
+  background-color: var(--theme-input);
+  border-color: var(--theme-border);
+  color: var(--theme-foreground);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--theme-primary);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* 暗黑模式下的输入框焦点样式 */
+.dark input:focus, .dark textarea:focus, .dark select:focus {
+  box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.25);
+}
+
+/* 森林主题下的输入框焦点样式 */
+.forest input:focus, .forest textarea:focus, .forest select:focus {
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.25);
+}
+
+/* 日落主题下的输入框焦点样式 */
+.sunset input:focus, .sunset textarea:focus, .sunset select:focus {
+  box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.25);
+}

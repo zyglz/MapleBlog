@@ -19,6 +19,7 @@
   @include meta.load-css("markdown");
   @include meta.load-css("glass");
   @include meta.load-css("glass-new");
+  @include meta.load-css("themes");
 }
 
 @layer utilities {

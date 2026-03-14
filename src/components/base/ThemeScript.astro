@@ -1,40 +1,82 @@
 <script is:inline data-astro-rerun>
-  const defaultTheme = "system";
-
-  function getTheme(defaultTheme) {
-    var darkMode = defaultTheme === "dark" ? true : false;
-    if (localStorage.getItem("theme") === "system") {
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        darkMode = true;
-      }
-    } else if (localStorage.getItem("theme") === "dark") {
-      darkMode = true;
-    } else if (localStorage.getItem("theme") === "light") {
-      darkMode = false;
+  // 主题配置
+  const themes = {
+    default: {
+      name: 'default',
+      label: '默认主题',
+      isDark: false
+    },
+    dark: {
+      name: 'dark',
+      label: '暗黑主题',
+      isDark: true
+    },
+    forest: {
+      name: 'forest',
+      label: '森林主题',
+      isDark: false
+    },
+    sunset: {
+      name: 'sunset',
+      label: '日落主题',
+      isDark: false
     }
-    return darkMode;
+  };
+
+  // 获取当前主题
+  function getCurrentTheme() {
+    return localStorage.getItem('currentTheme') || 'default';
   }
 
-  function setTheme(darkMode) {
-    // Update DOM
-    darkMode
-      ? document.documentElement.classList.add("dark")
-      : document.documentElement.classList.remove("dark");
-    // Update localStorage
-    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  // 设置主题
+  function setTheme(themeName) {
+    // 移除所有主题类
+    document.documentElement.classList.remove(...Object.keys(themes));
+    
+    // 添加当前主题类
+    document.documentElement.classList.add(themeName);
+    
+    // 处理暗黑模式
+    if (themes[themeName].isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    // 保存主题到本地存储
+    localStorage.setItem('currentTheme', themeName);
+    
+    // 更新主题选择器
+    updateThemeSelector(themeName);
   }
 
-  // This prevents flickering back to default theme before the page is fully loaded
-  setTheme(getTheme(defaultTheme));
+  // 更新主题选择器
+  function updateThemeSelector(themeName) {
+    const selector = document.getElementById('theme-selector');
+    if (selector) {
+      selector.value = themeName;
+    }
+  }
 
+  // 初始化主题
+  function initTheme() {
+    const themeName = getCurrentTheme();
+    setTheme(themeName);
+  }
+
+  // 初始化
+  initTheme();
+
+  // 监听页面加载
   document.addEventListener("astro:page-load", () => {
-    setTheme(getTheme(defaultTheme));
-    // Theme switcher
-    var themeSwitch = document.querySelectorAll("[data-theme-switcher]");
-    themeSwitch.forEach((el) => {
-      el.addEventListener("change", (e) => {
-        setTheme(e.target.checked);
+    initTheme();
+    
+    // 主题选择器事件
+    const selector = document.getElementById('theme-selector');
+    if (selector) {
+      selector.addEventListener('change', (e) => {
+        setTheme(e.target.value);
       });
-    });
+    }
   });
 </script>
