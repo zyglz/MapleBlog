@@ -1,6 +1,6 @@
 /* 主题样式文件 */
 
-/* 默认主题 */
+/* 默认主题 - 蓝色调 */
 :root {
   --theme-primary: #007bff;
   --theme-secondary: #6c757d;
@@ -12,6 +12,17 @@
   --theme-border: #dee2e6;
   --theme-input: #ffffff;
   --theme-ring: #007bff;
+  --theme-glass: rgba(255, 255, 255, 0.15);
+  --theme-gradient: linear-gradient(135deg, #007bff 0%, #17a2b8 100%);
+  --theme-text-primary: #343a40;
+  --theme-text-secondary: #6c757d;
+  --theme-text-light: #868e96;
+  --theme-hover: #e9ecef;
+  --theme-active: #007bff;
+  --theme-success: #28a745;
+  --theme-warning: #ffc107;
+  --theme-danger: #dc3545;
+  --theme-info: #17a2b8;
 }
 
 /* 暗黑主题 */
@@ -26,9 +37,20 @@
   --theme-border: #343a40;
   --theme-input: #343a40;
   --theme-ring: #00aaff;
+  --theme-glass: rgba(255, 255, 255, 0.08);
+  --theme-gradient: linear-gradient(135deg, #00aaff 0%, #17a2b8 100%);
+  --theme-text-primary: #e9ecef;
+  --theme-text-secondary: #adb5bd;
+  --theme-text-light: #6c757d;
+  --theme-hover: #2d2d2d;
+  --theme-active: #00aaff;
+  --theme-success: #28a745;
+  --theme-warning: #ffc107;
+  --theme-danger: #dc3545;
+  --theme-info: #17a2b8;
 }
 
-/* 森林主题 */
+/* 森林主题 - 绿色调 */
 :root.forest {
   --theme-primary: #28a745;
   --theme-secondary: #6c757d;
@@ -40,9 +62,20 @@
   --theme-border: #d4edda;
   --theme-input: #ffffff;
   --theme-ring: #28a745;
+  --theme-glass: rgba(40, 167, 69, 0.1);
+  --theme-gradient: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  --theme-text-primary: #2c3e50;
+  --theme-text-secondary: #495057;
+  --theme-text-light: #6c757d;
+  --theme-hover: #f1f8e9;
+  --theme-active: #28a745;
+  --theme-success: #28a745;
+  --theme-warning: #ffc107;
+  --theme-danger: #dc3545;
+  --theme-info: #17a2b8;
 }
 
-/* 日落主题 */
+/* 日落主题 - 橙色调 */
 :root.sunset {
   --theme-primary: #fd7e14;
   --theme-secondary: #6c757d;
@@ -54,39 +87,69 @@
   --theme-border: #fff3cd;
   --theme-input: #ffffff;
   --theme-ring: #fd7e14;
+  --theme-glass: rgba(253, 126, 20, 0.1);
+  --theme-gradient: linear-gradient(135deg, #fd7e14 0%, #ffc107 100%);
+  --theme-text-primary: #495057;
+  --theme-text-secondary: #6c757d;
+  --theme-text-light: #868e96;
+  --theme-hover: #fff3e0;
+  --theme-active: #fd7e14;
+  --theme-success: #28a745;
+  --theme-warning: #ffc107;
+  --theme-danger: #dc3545;
+  --theme-info: #17a2b8;
 }
 
 /* 应用主题变量到全局样式 */
 body {
   background-color: var(--theme-background) !important;
   color: var(--theme-foreground) !important;
+  transition: all 0.3s ease-in-out;
 }
 
 /* 卡片样式 */
-.card {
+.card, .glass {
   background-color: var(--theme-card);
   color: var(--theme-card-foreground);
   border-color: var(--theme-border);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 玻璃效果样式 */
+.glass {
+  background: var(--theme-glass) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* 按钮样式 */
 .btn-primary {
   background-color: var(--theme-primary);
   color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: var(--theme-gradient);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
   background-color: var(--theme-secondary);
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 /* 链接样式 */
 a {
   color: var(--theme-primary);
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
   color: var(--theme-accent);
+  text-decoration: underline;
 }
 
 /* 输入框样式 */
@@ -94,11 +157,13 @@ input, textarea, select {
   background-color: var(--theme-input);
   border-color: var(--theme-border);
   color: var(--theme-foreground);
+  transition: all 0.3s ease-in-out;
 }
 
 input:focus, textarea:focus, select:focus {
   border-color: var(--theme-primary);
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  transform: translateY(-1px);
 }
 
 /* 暗黑模式下的输入框焦点样式 */
@@ -114,4 +179,304 @@ input:focus, textarea:focus, select:focus {
 /* 日落主题下的输入框焦点样式 */
 .sunset input:focus, .sunset textarea:focus, .sunset select:focus {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.25);
+}
+
+/* 主题选择器样式 */
+#theme-selector-btn {
+  background: transparent !important;
+  border-color: var(--theme-border);
+  color: var(--theme-foreground);
+  transition: all 0.3s ease-in-out;
+}
+
+#theme-selector-btn:hover {
+  border-color: var(--theme-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#theme-selector-dropdown {
+  background-color: var(--theme-card);
+  border-color: var(--theme-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.theme-option {
+  color: var(--theme-foreground);
+  transition: all 0.2s ease-in-out;
+}
+
+.theme-option:hover {
+  background-color: var(--theme-background);
+  transform: translateX(4px);
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--theme-foreground);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-primary);
+}
+
+/* 头部样式 */
+header {
+  transition: all 0.3s ease-in-out;
+}
+
+header .liquid-glass {
+  background: var(--theme-glass) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+header .glass-button {
+  color: var(--theme-foreground);
+  border-color: var(--theme-border);
+  transition: all 0.3s ease-in-out;
+}
+
+header .glass-button:hover {
+  color: var(--theme-primary);
+  border-color: var(--theme-primary);
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+header .glass-button.active {
+  color: var(--theme-primary);
+  border-color: var(--theme-primary);
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 底部样式 */
+footer {
+  transition: all 0.3s ease-in-out;
+}
+
+footer .liquid-glass {
+  background: var(--theme-glass) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .text-txt-light {
+  color: var(--theme-text-light) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .text-txt-p {
+  color: var(--theme-text-primary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 菜单样式 */
+#nav-menu {
+  background-color: var(--theme-card) !important;
+  border-color: var(--theme-border) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-menu a {
+  color: var(--theme-text-primary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-menu a:hover {
+  color: var(--theme-primary) !important;
+}
+
+#nav-menu a.active {
+  color: var(--theme-primary) !important;
+}
+
+/* 页面加载动画 */
+.page-loading {
+  background: var(--theme-glass) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.loading-text {
+  background: var(--theme-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 社交链接样式 */
+.social-link {
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  color: var(--theme-primary) !important;
+  transform: translateY(-2px);
+}
+
+/* 统计数据样式 */
+.stats-item {
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 面包屑样式 */
+.breadcrumbs {
+  background-color: var(--theme-card) !important;
+  border-color: var(--theme-border) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumbs a {
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumbs a:hover {
+  color: var(--theme-primary) !important;
+}
+
+/* 文章卡片样式 */
+.blog-list-card {
+  background-color: var(--theme-card) !important;
+  border-color: var(--theme-border) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-list-card h3 {
+  color: var(--theme-text-primary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-list-card p {
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 标签样式 */
+.tag {
+  background-color: var(--theme-hover) !important;
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.tag:hover {
+  background-color: var(--theme-primary) !important;
+  color: white !important;
+}
+
+/* 分页样式 */
+.pagination {
+  background-color: var(--theme-card) !important;
+  border-color: var(--theme-border) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination a {
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination a:hover {
+  color: var(--theme-primary) !important;
+  background-color: var(--theme-hover) !important;
+}
+
+.pagination .active {
+  color: var(--theme-primary) !important;
+  background-color: var(--theme-hover) !important;
+}
+
+/* 表单样式 */
+.form-group {
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group label {
+  color: var(--theme-text-primary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 通知样式 */
+.notice {
+  background-color: var(--theme-card) !important;
+  border-color: var(--theme-border) !important;
+  color: var(--theme-text-primary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 表格样式 */
+table {
+  border-color: var(--theme-border) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+table th {
+  background-color: var(--theme-hover) !important;
+  color: var(--theme-text-primary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+table td {
+  background-color: var(--theme-card) !important;
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 代码块样式 */
+pre {
+  background-color: var(--theme-card) !important;
+  border-color: var(--theme-border) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+code {
+  background-color: var(--theme-hover) !important;
+  color: var(--theme-text-primary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 引用样式 */
+blockquote {
+  border-left-color: var(--theme-primary) !important;
+  background-color: var(--theme-hover) !important;
+  color: var(--theme-text-secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  #nav-menu {
+    background-color: var(--theme-card) !important;
+    border-color: var(--theme-border) !important;
+  }
+  
+  .dark #nav-menu {
+    background-color: var(--theme-card) !important;
+    border-color: var(--theme-border) !important;
+  }
+  
+  .forest #nav-menu {
+    background-color: var(--theme-card) !important;
+    border-color: var(--theme-border) !important;
+  }
+  
+  .sunset #nav-menu {
+    background-color: var(--theme-card) !important;
+    border-color: var(--theme-border) !important;
+  }
 }

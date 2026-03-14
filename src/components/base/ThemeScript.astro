@@ -1,4 +1,6 @@
 <script is:inline data-astro-rerun>
+  import { defaultTheme as configDefaultTheme } from '@lib/themeConfig';
+
   // 主题配置
   const themes = {
     default: {
@@ -42,7 +44,7 @@
     }
     
     // 最后使用系统默认主题
-    return 'default';
+    return configDefaultTheme;
   }
 
   // 设置主题

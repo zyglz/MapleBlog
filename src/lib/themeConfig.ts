@@ -91,6 +91,9 @@ export const themes: Record<string, ThemeConfig> = {
   }
 };
 
+// 从环境变量获取默认主题，默认为 'default'
+export const defaultTheme = import.meta.env.PUBLIC_DEFAULT_THEME || 'default';
+
 // 获取主题配置
 export function getThemeConfig(themeName: string): ThemeConfig {
   return themes[themeName] || themes.default;

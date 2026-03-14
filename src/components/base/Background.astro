@@ -1,7 +1,6 @@
-<!-- Dual Image Background -->
+<!-- Theme-based Background -->
 <style>
-  html::before,
-  html::after {
+  html::before {
     content: "";
     position: fixed;
     top: 0;
@@ -12,25 +11,27 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    transition: opacity 0.25s ease-in-out;
+    transition: all 0.5s ease-in-out;
     pointer-events: none;
   }
 
+  /* 默认主题背景 */
   html::before {
     background-image: url(/src/assets/backgrounds/macos2.jpg);
-    opacity: 1;
   }
 
+  /* 暗黑主题背景 */
   html.dark::before {
-    opacity: 0;
-  }
-
-  html::after {
     background-image: url(/src/assets/backgrounds/macos2-night.jpg);
-    opacity: 0;
   }
 
-  html.dark::after {
-    opacity: 1;
+  /* 森林主题背景 */
+  html.forest::before {
+    background-image: linear-gradient(rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.2)), url(/src/assets/backgrounds/bwca-day.jpg);
+  }
+
+  /* 日落主题背景 */
+  html.sunset::before {
+    background-image: linear-gradient(rgba(253, 126, 20, 0.1), rgba(253, 126, 20, 0.2)), url(/src/assets/backgrounds/bwca-day.jpg);
   }
 </style>
