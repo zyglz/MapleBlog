@@ -1,6 +1,6 @@
 <script is:inline data-astro-rerun>
-  // 从环境变量获取默认主题，默认为 'default'
-  const configDefaultTheme = import.meta.env.PUBLIC_DEFAULT_THEME || 'default';
+  // 默认主题配置
+  const configDefaultTheme = 'forest';
 
   // 主题配置
   const themes = {
@@ -29,6 +29,15 @@
       isDark: false
     }
   };
+
+  // 确保DOM元素存在后再执行操作
+  function safeInit() {
+    // 初始化主题
+    initTheme();
+    
+    // 绑定事件监听器
+    bindEventListeners();
+  }
 
   // 获取当前主题
   function getCurrentTheme() {
@@ -108,54 +117,64 @@
     // 主题选择器按钮点击事件
     const selectorBtn = document.getElementById('theme-selector-btn');
     if (selectorBtn) {
-      selectorBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const dropdown = document.getElementById('theme-selector-dropdown');
-        if (dropdown) {
-          if (dropdown.classList.contains('hidden')) {
-            showThemeDropdown();
-          } else {
-            hideThemeDropdown();
-          }
-        }
-      });
+      // 先移除可能存在的事件监听器
+      selectorBtn.removeEventListener('click', handleThemeSelectorClick);
+      // 添加新的事件监听器
+      selectorBtn.addEventListener('click', handleThemeSelectorClick);
     }
 
     // 主题选项点击事件
     const themeOptions = document.querySelectorAll('.theme-option');
     themeOptions.forEach((option) => {
-      option.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const themeName = option.getAttribute('data-theme');
-        if (themeName) {
-          setTheme(themeName);
-        }
-      });
+      // 先移除可能存在的事件监听器
+      option.removeEventListener('click', handleThemeOptionClick);
+      // 添加新的事件监听器
+      option.addEventListener('click', handleThemeOptionClick);
     });
 
     // 点击其他地方关闭下拉菜单
-    document.addEventListener('click', (e) => {
-      const dropdown = document.getElementById('theme-selector-dropdown');
-      const selectorBtn = document.getElementById('theme-selector-btn');
-      if (dropdown && !dropdown.contains(e.target) && !selectorBtn.contains(e.target)) {
-        hideThemeDropdown();
-      }
-    });
+    document.removeEventListener('click', handleDocumentClick);
+    document.addEventListener('click', handleDocumentClick);
   }
 
-  // 初始化
-  initTheme();
+  // 主题选择器按钮点击事件处理函数
+  function handleThemeSelectorClick(e) {
+    e.stopPropagation();
+    const dropdown = document.getElementById('theme-selector-dropdown');
+    if (dropdown) {
+      if (dropdown.classList.contains('hidden')) {
+        showThemeDropdown();
+      } else {
+        hideThemeDropdown();
+      }
+    }
+  }
+
+  // 主题选项点击事件处理函数
+  function handleThemeOptionClick(e) {
+    e.stopPropagation();
+    const themeName = this.getAttribute('data-theme');
+    if (themeName) {
+      setTheme(themeName);
+    }
+  }
+
+  // 文档点击事件处理函数
+  function handleDocumentClick(e) {
+    const dropdown = document.getElementById('theme-selector-dropdown');
+    const selectorBtn = document.getElementById('theme-selector-btn');
+    if (dropdown && !dropdown.contains(e.target) && !selectorBtn.contains(e.target)) {
+      hideThemeDropdown();
+    }
+  }
 
   // 监听DOM加载完成
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', bindEventListeners);
+    document.addEventListener('DOMContentLoaded', safeInit);
   } else {
-    bindEventListeners();
+    safeInit();
   }
 
   // 监听页面加载
-  document.addEventListener("astro:page-load", () => {
-    initTheme();
-    bindEventListeners();
-  });
+  document.addEventListener("astro:page-load", safeInit);
 </script>
