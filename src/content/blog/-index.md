@@ -39,7 +39,7 @@ www.zyglz.com
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
     <div style="margin-bottom: 6px;"><strong>🔍 用微信搜一搜：</strong><span style="background: #e8f0fe; color: #1e3c72; padding: 2px 16px; border-radius: 20px; font-weight: bold;">资源管理站</span></div>
     <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词，解锁精选资源包</strong></div>
-    <div><strong>✨ 在这里，遇见你想要的每一份资源</div>
+    <div><strong>🚀 在这里，遇见你想要的每一份资源</div>
   </div>
 </div>
 
@@ -81,7 +81,7 @@ www.zyglz.com
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
     <div style="margin-bottom: 6px;"><strong>🔍 用微信搜一搜：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></div>
     <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词，解锁精选资源包</strong></div>
-    <div><strong>✨ 在这里，遇见你想要的每一份资源</div>
+    <div><strong>🚀 在这里，遇见你想要的每一份资源</div>
   </div>
 </div>
 

@@ -114,7 +114,7 @@ MapleBlog 是一个基于 Astro 的静态博客生成器，非常适合在 Cloud
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
     <div style="margin-bottom: 6px;"><strong>🔍 用微信搜一搜：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></div>
     <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词，解锁精选资源包</strong></div>
-    <div><strong>✨ 在这里，遇见你想要的每一份资源</div>
+    <div><strong>🚀 在这里，遇见你想要的每一份资源</div>
   </div>
 </div>
 
