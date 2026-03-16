@@ -4,7 +4,7 @@ description: 在Markdown写作中，恰当地使用图标能让文章**层次更
 createdAt: 2026-03-16
 updatedAt: 2026-03-16
 author: Tidus
-image: "@assets/uploads/demo.webp"
+image: "https://image.zyglz.com/file/zyglz/2026/1773660177246.jpg"
 categories:
   - 技术笔记
 tags:
@@ -19,6 +19,8 @@ hideToc: true
 在Markdown写作中，恰当地使用图标能让文章**层次更分明、阅读更轻松、视觉更有趣**。本文将为你全面梳理Markdown中可用的图标资源和使用技巧，让你的技术文档、博客文章从此告别单调！
 
 ***
+
+![Markdown图标使用指南.jpg](https://image.zyglz.com/file/zyglz/2026/1773660177246.jpg)
 
 ## 📋 为什么要在Markdown中使用图标？
 
@@ -267,12 +269,5 @@ hideToc: true
 </div>
 
 ## 📢 技术福利
-<div align="center">  
 
-| | |
-|:---:|:---|
-| ![公众号二维码](https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg) | **📌 公众号：资源管理站**<br>🔍 微信搜一搜：**资源管理站**<br>💬 `获取其它咨询`<br>✨ 已有100+关注 |
-  
-</div>
-
----
+<table style="border-collapse:collapse; width:auto; background:transparent;"> <tr> <td style="padding:10px;"> <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display:block; border-radius:12px;"> </td> <td style="padding:0 15px; line-height:2;"> <strong style="font-size:18px;">📌 关注我们 · 发现更多资源</strong></br> <strong>🔍 微信搜索：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></br> <strong>💬 后台回复关键词，解锁精选资源包</strong></br> <strong>✨ 在这里，遇见你想要的每一份资源</strong> </td> </tr> </table>
