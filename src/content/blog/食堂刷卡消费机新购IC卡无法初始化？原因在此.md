@@ -100,25 +100,14 @@ hideToc: true
 
 ***
 
-## ⚠️ 下载链接
+## 📢 技术福利
 
-### 📱**关注微信公众号获取**
+如果你也在处理食堂IC卡初始化问题，需要常用密钥包，可以关注公众号获取：
 
-<table style="border-collapse:collapse; width:auto; background:transparent;">
-  <tr>
-    <td style="padding:10px;">
-      <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display:block; border-radius:12px;">
-    </td>
-    <td style="padding:0 15px; line-height:2;">
-      <strong style="font-size:18px;">📌公众号：资源管理站</strong></br>
-      <strong>🔍 微信搜一搜：</strong><strong style="background:#f0f0f0; padding:2px 8px; border-radius:4px;">资源管理站</strong></br>
-      <strong>💬回复关键字：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 10px; border-radius:20px;">密钥</strong></br>
-      <strong>🎁自动获取：</strong>密钥文件
-    </td>
-  </tr>
-</table>
-
-***
+| | |
+|:---:|:---|
+| ![公众号二维码](https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg) | **📌 公众号**：**`资源管理站`**<br>🔍 微信搜一搜：**资源管理站**<br>💬 回复关键字：**`密钥`**<br>🎁 自动获取：常用食堂消费系统密钥 |
+---
 
 ## 💬 交流互动
 
@@ -126,4 +115,3 @@ hideToc: true
 
 *如果你在操作过程中遇到其他问题，欢迎在公众号留言交流。我们会定期整理常见问题，为大家提供更多实用的技术解决方案。*
 
-***
