@@ -55,3 +55,20 @@ hideToc: false
 4. 随后刷新网页,填好你的账号密码即可(首个用户即为系统管理员)
 
 ![免费使用cloudflare搭建BitWarden密码管理器.jpg](https://image.zyglz.com/file/zyglz/2026/1772857691237.jpg)
+
+## 📢 技术福利
+
+<div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
+  <div style="margin-right: 20px;">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; line-height: 1.6;">
+    <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
+    <div style="margin-bottom: 6px;"><strong>🔍 用微信搜一搜：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></div>
+    <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词，解锁精选资源包</strong></div>
+    <div><strong>✨ 在这里，遇见你想要的每一份资源</div>
+  </div>
+</div>
+
+## 💬 交流互动
+*如果你在操作过程中遇到其他问题，欢迎在公众号留言交流。*

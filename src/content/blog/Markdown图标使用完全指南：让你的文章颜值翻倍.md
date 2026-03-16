@@ -259,15 +259,23 @@ hideToc: true
 
 现在就打开你的Markdown编辑器，试试用图标美化你的下一篇文章吧！
 
+---
+## 📢 技术福利
 
-<div>
+<div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
+  <div style="margin-right: 20px;">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; line-height: 1.6;">
+    <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
+    <div style="margin-bottom: 6px;"><strong>🔍 用微信搜一搜：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></div>
+    <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词，解锁精选资源包</strong></div>
+    <div><strong>✨ 在这里，遇见你想要的每一份资源</div>
+  </div>
+</div>
+
+---
 
 **✨ 收藏本文，随时查阅图标大全 ✨**
 
 **🔁 分享给同样在写Markdown的朋友**
-
-</div>
-
-## 📢 技术福利
-
-<table style="border-collapse:collapse; width:auto; background:transparent;"> <tr> <td style="padding:10px;"> <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display:block; border-radius:12px;"> </td> <td style="padding:0 15px; line-height:2;"> <strong style="font-size:18px;">📌 关注我们 · 发现更多资源</strong></br> <strong>🔍 微信搜索：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></br> <strong>💬 后台回复关键词，解锁精选资源包</strong></br> <strong>✨ 在这里，遇见你想要的每一份资源</strong> </td> </tr> </table>
