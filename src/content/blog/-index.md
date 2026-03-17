@@ -33,7 +33,7 @@ www.zyglz.com
 
 <div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
   <div style="margin-right: 20px;">
-    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="120" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" alt="公众号：资源管理站" style="width: 140px; height: auto; display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 1; line-height: 1.6;">
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
@@ -51,7 +51,7 @@ www.zyglz.com
 
 <div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
   <div style="margin-right: 20px;">
-    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="120" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" alt="公众号：资源管理站" style="width: 140px; height: auto; display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 1; line-height: 1.6;">
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
@@ -75,7 +75,7 @@ www.zyglz.com
 
 <div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
   <div style="margin-right: 20px;">
-    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="120" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" alt="公众号：资源管理站" style="width: 140px; height: auto; display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 1; line-height: 1.6;">
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
