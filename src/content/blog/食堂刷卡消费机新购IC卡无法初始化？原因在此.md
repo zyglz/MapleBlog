@@ -104,7 +104,7 @@ hideToc: true
 
 如果你也在处理食堂IC卡初始化问题，需要常用密钥包，可以关注公众号获取：
 
-![微信公众号.png](https://image.zyglz.com/file/zyglz/2026/1773675187501.png)
+![微信公众号配图.png](https://image.zyglz.com/file/zyglz/2026/1773749111042.png)
 
 
 
@@ -115,7 +115,7 @@ hideToc: true
 
 <div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
   <div style="margin-right: 20px;">
-    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="120" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 1; line-height: 1.6;">
     <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>

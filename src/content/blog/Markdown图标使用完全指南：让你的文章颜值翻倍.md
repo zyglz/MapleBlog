@@ -18,7 +18,7 @@ hideToc: true
 
 在Markdown写作中，恰当地使用图标能让文章**层次更分明、阅读更轻松、视觉更有趣**。本文将为你全面梳理Markdown中可用的图标资源和使用技巧，让你的技术文档、博客文章从此告别单调！
 
-***
+
 
 ![Markdown图标使用指南.jpg](https://image.zyglz.com/file/zyglz/2026/1773660177246.jpg)
 
@@ -31,7 +31,7 @@ hideToc: true
 |  **视觉美化** | 打破纯文字带来的视觉疲劳，提升文章颜值     |
 |  **分类清晰** | 同类内容使用统一图标，形成视觉规律       |
 
-***
+
 
 ## 一、😊 直接使用Emoji表情（最简单）
 
@@ -52,7 +52,7 @@ hideToc: true
 | **数字序号** |  ① ② ③ ④ ⑤ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ | 步骤序号、列表编号                       |
 | **特殊符号** |     ✔️ ✗ ★ ☆ ♥ ♦ ♣ ♠ • · …     | 对勾、叉号、实心星、空心星、红心、方块、梅花、黑桃、项目符号  |
 
-***
+
 
 ## 二、🔣 Emoji代码方式
 
@@ -70,7 +70,7 @@ hideToc: true
 
 > 💡 提示：GitHub、GitLab、Gitee等代码托管平台都支持这种写法。
 
-***
+
 
 ## 三、✨ Unicode符号大全（可直接复制）
 
@@ -104,7 +104,6 @@ hideToc: true
 
     ❶ ❷ ❸ ❹ ❺ ❻ ❼ ❽ ❾ ❿
 
-***
 
 ## 四、🎯 文章美化图标推荐方案
 
@@ -144,7 +143,7 @@ hideToc: true
 | 住宿体验 |  🏨  | 酒店住宿 |
 | 费用清单 |  💰  | 花费统计 |
 
-***
+
 
 ## 五、💡 图标使用小技巧
 
@@ -180,8 +179,6 @@ hideToc: true
 > 💡 小提示：可以使用PM3工具读取IC卡数据
 > 🔥 热门推荐：这个方法90%的人都不知道
 
-```
-
 ### 4. 分类标识
 
 不同类别使用不同图标，形成视觉规律：
@@ -197,7 +194,6 @@ hideToc: true
 *   同一层级使用**统一图标**，保持一致性
 *   图标只是**辅助**，不要喧宾夺主
 
-***
 
 ## 六、🌐 常用图标获取资源
 
@@ -208,7 +204,6 @@ hideToc: true
 | **Emojipedia**        | <https://emojipedia.org/>                        | 官方百科，更新及时 |
 | **Get Emoji**         | <https://getemoji.com/>                          | 一键复制，简洁实用 |
 
-***
 
 ## 七、📝 实战示例：一篇美化后的文章框架
 
@@ -246,8 +241,6 @@ hideToc: true
 欢迎在评论区分享你的作品！
 ```
 
-***
-
 ## 总结
 
 掌握Markdown图标的使用，可以让你的文章：
@@ -259,27 +252,10 @@ hideToc: true
 
 现在就打开你的Markdown编辑器，试试用图标美化你的下一篇文章吧！
 
----
 ## 📢 技术福利
 
-![微信公众号.png](https://image.zyglz.com/file/zyglz/2026/1773675187501.png)
+![微信公众号配图.png](https://image.zyglz.com/file/zyglz/2026/1773749111042.png)
 
 **✨ 收藏本文，随时查阅图标大全 ✨**
 
 **🔁 分享给同样在写Markdown的朋友**
-
-## 📢 技术福利
-
-<div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
-  <div style="margin-right: 20px;">
-    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  </div>
-  <div style="flex: 1; line-height: 1.6;">
-    <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
-    <div style="margin-bottom: 6px;"><strong>🔍 用微信搜一搜：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></div>
-    <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词，解锁精选资源包</strong></div>
-    <div><strong>🚀 在这里，遇见你想要的每一份资源</div>
-  </div>
-</div>
-
----

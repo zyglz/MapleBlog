@@ -474,7 +474,7 @@ lf em410x read
 
 ## 📢 技术福利
 
-![微信公众号.png](https://image.zyglz.com/file/zyglz/2026/1773675187501.png)
+![微信公众号配图.png](https://image.zyglz.com/file/zyglz/2026/1773749111042.png)
 
 ## 💬 交流互动
 *如果你在操作过程中遇到其他问题，欢迎在公众号留言交流。*
