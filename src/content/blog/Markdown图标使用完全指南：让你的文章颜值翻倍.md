@@ -1,5 +1,5 @@
 ---
-title: 🎨 Markdown图标使用完全指南：让你的文章颜值翻倍
+title: Markdown图标使用完全指南：让你的文章颜值翻倍
 description: 在Markdown写作中，恰当地使用图标能让文章**层次更分明、阅读更轻松、视觉更有趣。
 createdAt: 2026-03-16
 updatedAt: 2026-03-16
@@ -267,3 +267,19 @@ hideToc: true
 **✨ 收藏本文，随时查阅图标大全 ✨**
 
 **🔁 分享给同样在写Markdown的朋友**
+
+## 📢 技术福利
+
+<div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
+  <div style="margin-right: 20px;">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; line-height: 1.6;">
+    <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
+    <div style="margin-bottom: 6px;"><strong>🔍 用微信搜一搜：</strong><strong style="background:#ffebee; color:#c62828; font-weight:bold; padding:2px 12px; border-radius:20px;">资源管理站</strong></div>
+    <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词，解锁精选资源包</strong></div>
+    <div><strong>🚀 在这里，遇见你想要的每一份资源</div>
+  </div>
+</div>
+
+---

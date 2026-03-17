@@ -106,7 +106,21 @@ hideToc: true
 
 ![微信公众号.png](https://image.zyglz.com/file/zyglz/2026/1773675187501.png)
 
+
+
 后台回复关键字： **`密钥`**，获取专属资源文件。
 
 ## 💬 交流互动
 *如果你在操作过程中遇到其他问题，欢迎在公众号留言交流。*
+
+<div style="display: flex; align-items: center; border-radius: 12px; padding: 15px; margin: 20px 0;">
+  <div style="margin-right: 20px;">
+    <img src="https://www.zyglz.com/usr/uploads/WX_gongzhonghao.jpg" width="160" alt="公众号：资源管理站" style="display: block; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; line-height: 1.6;">
+    <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px;">📌 扫码关注 · 获取更多资源</div>
+    <div style="margin-bottom: 6px;"><strong>🔍 微信搜一搜：</strong><span style="background: #e8f0fe; color: #1e3c72; padding: 2px 16px; border-radius: 20px; font-weight: bold;">资源管理站</span></div>
+    <div style="margin-bottom: 6px;"><strong>💬 后台回复关键词：</strong><span style="background: #ffebee; color: #c62828; padding: 2px 16px; border-radius: 20px; font-weight: bold;">密钥</span></div>
+    <div><strong>📦 自动获取：</strong>专属资源文件</div>
+  </div>
+</div>
