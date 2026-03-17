@@ -1,6 +1,6 @@
 ---
 title: Markdown图标使用完全指南：让你的文章颜值翻倍
-description: 在Markdown写作中，恰当地使用图标能让文章**层次更分明、阅读更轻松、视觉更有趣**。
+description: 在Markdown写作中，恰当地使用图标能让文章层次更分明、阅读更轻松、视觉更有趣。
 createdAt: 2026-03-16
 updatedAt: 2026-03-16
 author: Tidus
@@ -253,8 +253,6 @@ hideToc: true
 现在就打开你的Markdown编辑器，试试用图标美化你的下一篇文章吧！
 
 ## 📢 技术福利
-
-![微信公众号配图.png](https://image.zyglz.com/file/zyglz/2026/1773749111042.png)
 
 ![微信公众号配图543.png](https://image.zyglz.com/file/zyglz/2026/1773752307269.png)
 

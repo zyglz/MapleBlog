@@ -106,7 +106,7 @@ MapleBlog 是一个基于 Astro 的静态博客生成器，非常适合在 Cloud
 
 ## 📢 技术福利
 
-![微信公众号配图.png](https://image.zyglz.com/file/zyglz/2026/1773749111042.png)
+![微信公众号配图543.png](https://image.zyglz.com/file/zyglz/2026/1773752307269.png)
 
 ## 💬 交流互动
 *如果你在操作过程中遇到其他问题，欢迎在公众号留言交流。*
