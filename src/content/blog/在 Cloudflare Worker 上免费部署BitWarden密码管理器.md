@@ -19,8 +19,6 @@ hideToc: false
 
 本文档详细介绍如何将 NodeWarden 部署到 Cloudflare Workers 上。
 
-
-<!--more-->
 ---
 ## 与 Bitwarden 官方服务端能力对比
 
@@ -42,9 +40,7 @@ hideToc: false
 | 管理后台 / 计费订阅 | ✅ | ❌ | 纯免费 |
 | 推送通知完整链路 | ✅ | ❌ | 没必要实现 |
 
-
 ## 网页部署
-
 
 1. Fork 本仓库。若本项目对你有帮助，欢迎点个 Star。
 2. 打开 [Workers](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create) ➜ `Continue with GitHub` ➜ 选择你 Fork 后的仓库（`NodeWarden`）➜ 下一步 ➜ （默认使用 R2 存储；若未开通，可切换为 KV，并将部署命令改为 `npm run deploy:kv`）➜ 部署 
