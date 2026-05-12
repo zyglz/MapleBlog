@@ -107,7 +107,7 @@ hideToc: false
 
 - **微信公众号**：资源管理站（搜一搜或扫下方二维码）
 
-![微信公众号二维码](https://www.zyglz.com/usr/uploads/WeiXinGongZhongHao.jpg)
+![微信公众号二维码](https://image.zyglz.com/file/zyglz/2026/1773752307269.png)
 
 - **微信小程序**：zyglz（搜一搜或扫下方小程序码）
 

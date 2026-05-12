@@ -77,7 +77,7 @@ draft: false
 
 微信搜一搜 **“资源管理站”** 或扫描下方二维码关注：
 
-![微信公众号二维码](https://www.zyglz.com/usr/uploads/WeiXinGongZhongHao.jpg)
+![微信公众号二维码](https://image.zyglz.com/file/zyglz/2026/1773752307269.png)
 
 *公众号主要分享：办公自动化技巧、效率工具推荐、行业思考*
 
