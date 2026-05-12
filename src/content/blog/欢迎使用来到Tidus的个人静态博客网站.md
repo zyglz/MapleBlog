@@ -111,7 +111,7 @@ hideToc: false
 
 - **微信小程序**：zyglz（搜一搜或扫下方小程序码）
 
-![微信小程序码](https://www.zyglz.com/usr/uploads/WeiXinXiaoChengXu.jpg)
+![微信小程序码](https://image.zyglz.com/file/zyglz/2026/1778581354199.jpg)
 
 - **GitHub**：[github.com/hoochone](https://github.com/hoochone)
 - **邮箱**：admin@zyglz.com

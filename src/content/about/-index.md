@@ -87,7 +87,7 @@ draft: false
 
 微信搜一搜 **“zyglz”** 或扫描下方小程序码体验：
 
-![微信小程序码](https://www.zyglz.com/usr/uploads/WeiXinXiaoChengXu.jpg)
+![微信小程序码](https://image.zyglz.com/file/zyglz/2026/1778581354199.jpg)
 
 *小程序主要提供：实用工具、资源导航、博客同步内容*
 
