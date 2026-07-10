@@ -4,7 +4,7 @@ description: 在 Cloudflare Worker 上免费部署BitWarden密码管理器。
 createdAt: 2026-03-07
 updatedAt: 2026-03-07
 author: Tidus
-image: "https://image.zyglz.com/file/zyglz/2026/1772857691237.jpg"
+image: "https://image.ttdd.top/file/zyglz/2026/1783501667978.jpg"
 categories:
   - 网站运营
 tags:
@@ -46,15 +46,15 @@ hideToc: false
 2. 打开 [Workers](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create) ➜ `Continue with GitHub` ➜ 选择你 Fork 后的仓库（`NodeWarden`）➜ 下一步 ➜ （默认使用 R2 存储；若未开通，可切换为 KV，并将部署命令改为 `npm run deploy:kv`）➜ 部署 
 3. 打开生成的链接（绑定自定义域名），按提示，添加“变量和机密”：JWT_SECRET
 
-![免费使用cloudflare搭建BitWarden密码管理器1.png](https://image.zyglz.com/file/zyglz/2026/1772857696488.png)
+![免费使用cloudflare搭建BitWarden密码管理器1.png](https://image.ttdd.top/file/zyglz/2026/1783501662466.png)
 
 4. 随后刷新网页,填好你的账号密码即可(首个用户即为系统管理员)
 
-![免费使用cloudflare搭建BitWarden密码管理器.jpg](https://image.zyglz.com/file/zyglz/2026/1772857691237.jpg)
+![免费使用cloudflare搭建BitWarden密码管理器.jpg](https://image.ttdd.top/file/zyglz/2026/1783501667978.jpg)
 
 ## 📢 技术福利
 
-![微信公众号配图543.png](https://image.zyglz.com/file/zyglz/2026/1773752307269.png)
+![微信公众号配图543.png](https://image.ttdd.top/file/zyglz/2026/1783501664331.png)
 
 ## 💬 交流互动
 *如果你在操作过程中遇到其他问题，欢迎在公众号留言交流。*

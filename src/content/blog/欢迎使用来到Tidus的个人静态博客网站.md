@@ -6,7 +6,7 @@ updatedAt: 2026-01-01
 categories:
   - 生活随笔
 author: Tidus
-image: "https://image.zyglz.com/file/zyglz/2026/1773473863262.jpg"
+image: "https://image.ttdd.top/file/zyglz/2026/1783501665705.jpg"
 tags:
   - 日常记录
   - 网站建设
@@ -16,7 +16,7 @@ hideToc: false
 
 # 你好，世界！—— 我的静态博客开张了
 
-![我的博客开张啦.jpg](https://image.zyglz.com/file/zyglz/2026/1773473863262.jpg)
+![我的博客开张啦.jpg](https://image.ttdd.top/file/zyglz/2026/1783501665705.jpg)
 
 ## 🌟 写在前面
 
@@ -107,11 +107,11 @@ hideToc: false
 
 - **微信公众号**：资源管理站（搜一搜或扫下方二维码）
 
-![微信公众号二维码](https://image.zyglz.com/file/zyglz/2026/1773752307269.png)
+![微信公众号二维码](https://image.ttdd.top/file/zyglz/2026/1783501660682.jpg)
 
 - **微信小程序**：zyglz（搜一搜或扫下方小程序码）
 
-![微信小程序码](https://image.zyglz.com/file/zyglz/2026/1778581354199.jpg)
+![微信小程序码](https://image.ttdd.top/file/zyglz/2026/1783501666540.jpg)
 
 - **GitHub**：[github.com/hoochone](https://github.com/hoochone)
 - **邮箱**：admin@zyglz.com
@@ -138,7 +138,7 @@ hideToc: false
 
 ## 📢 技术福利
 
-![微信公众号配图543.png](https://image.zyglz.com/file/zyglz/2026/1773752307269.png)
+![微信公众号配图543.png](https://image.ttdd.top/file/zyglz/2026/1783501664331.png)
 
 ## 💬 交流互动
 *如果你在操作过程中遇到其他问题，欢迎在公众号留言交流。*
